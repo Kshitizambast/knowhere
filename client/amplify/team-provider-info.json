@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-knowhere-dev-233348-authRole",
+      "UnauthRoleArn": "arn:aws:iam::471668924068:role/amplify-knowhere-dev-233348-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::471668924068:role/amplify-knowhere-dev-233348-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-knowhere-dev-233348-deployment",
+      "UnauthRoleName": "amplify-knowhere-dev-233348-unauthRole",
+      "StackName": "amplify-knowhere-dev-233348",
+      "StackId": "arn:aws:cloudformation:ap-south-1:471668924068:stack/amplify-knowhere-dev-233348/66fc2d40-c171-11eb-9626-028610bca50e",
+      "AmplifyAppId": "d2sdfugna863jx"
+    }
+  }
+}

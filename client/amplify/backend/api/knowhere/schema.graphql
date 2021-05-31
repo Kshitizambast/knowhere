@@ -1,0 +1,91 @@
+
+
+type Pin @model  {
+  id: ID!
+  title: String!
+  imageUrl: String!
+  rating: [Rate]
+  username: String!
+  location: Location!
+  comments: [Comment]! 
+  createdAt:  String!
+  updatedAT:  String!
+}
+
+
+type VideoPin @model  {
+  id: ID!
+  title: String!
+  VideoUrl: String!
+  rating: [Rate]
+  username: String!
+  location: Location!
+  comments: [Comment]
+  createdAt:  String!
+  updatedAT:  String!
+}
+
+type Comment @model  {
+  id: ID!
+  content: String!
+  username: String!
+  createdAt:  String!
+  updatedAT:  String!
+
+}
+
+type Rate @model{
+  id:ID!
+  username:String!
+  rating: Float!
+  createdAt:  String!
+  updatedAT:  String!
+}
+
+type User @model {
+  id: ID!
+  username: String!
+  email:  String
+  phone:  Int!
+  firstName: String
+  lastName: String
+  ipAddress:  String!
+  token:  String!
+  followers:  [Followers]
+  following:  [Following]
+  createdAt:  String!
+  updatedAT:  String!
+  currentLocation: Location
+  permissions: [Permissions]
+  facebookLink: String
+  instagramLink: String
+  snapchatLink: String
+  twitterLink: String
+}
+
+type Followers @model {
+  id: ID!
+  username: String!
+  createdAt:  String!
+  updatedAT:  String!
+}
+
+type Location @model{
+  id:ID!
+  latitude: String!
+  longitude: String!
+}
+
+type Following @model{
+  id:ID!
+  username:String!
+  createdAt:  String!
+  updatedAT:  String!
+}
+
+type Permissions @model {
+  id: ID!
+  username: String!
+  hideNearbyStatus: Boolean
+  hidePinsToPublic: Boolean 
+}
